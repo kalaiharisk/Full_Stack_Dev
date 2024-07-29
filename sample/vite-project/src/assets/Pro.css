@@ -1,0 +1,581 @@
+/***    General     ***/
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    
+} */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.m-5-auto {
+    margin: 2.5rem 36rem  ;
+}
+
+/* .home-para
+{
+    text-align: left; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-indent: 45px;
+} */
+.primary-button {
+    margin-top: 5rem;
+    margin-right: 20px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    padding: .6rem;
+    width: 10rem;
+    background: #2995ed;
+    border-radius: 26px;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all .5s;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-left: 650px;
+}
+
+/***    Landing Page     ***/
+/* .main-title,
+.main-para {
+    color: #777777;
+    text-align: left;
+} */
+
+.main-title {
+    padding-top: 12rem;
+    font-size: 5rem;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-style: oblique;
+    text-indent: 50px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+}
+
+.main-para {
+    font-size: 2.5rem;
+    text-Transform: capitalize
+}
+
+#reg_btn span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#reg_btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#reg_btn:hover span {
+    padding-right: 25px;
+}
+
+#reg_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* **    Login Page     ** */
+.neee-lo {
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.neee-lo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/man.png'); /* Add the background image */
+    background-size: 100% 110%; /* Set size for the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center; /* Center the image */
+    filter: blur(10px); /* Apply blur to the background image */
+    opacity: 0.8; /* Adjust opacity for overlay effect */
+    z-index: -1; /* Ensure it sits behind content */
+}
+
+h2 {
+    font-weight: 300;
+}
+
+form {
+    display: inline-block;
+    background: #95a2b6;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 2rem;
+    margin: 2rem 0 1rem 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.form:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adding box shadow on hover */
+    transform: translateY(-5px);
+    /* Lift the form slightly on hover */
+}
+
+form label {
+    float: center;
+    font-size: .9rem;
+    margin: 1px;
+    padding-bottom: 50px;
+}
+
+.form label:hover {
+    background-color: #555555;
+    /* Change the background color on hover */
+}
+
+.right-label {
+    float: right;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input {
+    width: 15rem;
+    padding: .3rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-top: 10px;
+}
+
+#sub_btn {
+    display: block;
+    width: 100%;
+    padding: .3rem;
+    border: none;
+    background: #222;
+    color: #fff;
+    border-radius: 3px;
+}
+
+#sub_btn:hover {
+    background: #333;
+    transition: all .5s;
+}
+
+footer p {
+    margin: 0;
+    font-size: .9rem;
+}
+
+
+
+/***    Register Page     ***/
+/* Other CSS rules */
+#checkbox {
+    width: 1rem;
+}
+
+form span {
+    font-size: .8rem;
+}
+
+#reset_pass_lbl {
+    float: left;
+}
+
+.reggg {
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.reggg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/man.png'); /* Add the background image */
+    background-size: 100% 110%; /* Set size for the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center; /* Center the image */
+    filter: blur(10px); /* Apply blur to the background image */
+    opacity: 0.8; /* Adjust opacity for overlay effect */
+    z-index: -1; /* Ensure it sits behind content */
+}
+
+/* Additional CSS rules */
+h2 {
+    font-weight: 300;
+}
+
+form {
+    display: inline-block;
+    background: #95a2b6;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 2rem;
+    margin: 2rem 0 1rem 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.form:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+form label {
+    font-size: .9rem;
+    margin: 1px;
+    padding-bottom: 50px;
+}
+
+.form label:hover {
+    background-color: #555555;
+}
+
+.right-label {
+    float: right;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input {
+    width: 15rem;
+    padding: .3rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-top: 10px;
+}
+
+#sub_btn {
+    display: block;
+    width: 100%;
+    padding: .3rem;
+    border: none;
+    background: #222;
+    color: #fff;
+    border-radius: 3px;
+}
+
+#sub_btn:hover {
+    background: #333;
+    transition: all .5s;
+}
+
+footer p {
+    margin: 0;
+    font-size: .9rem;
+}
+    
+
+/***    Home Page     ***/
+
+.home-page {
+    position: fixed; /* Ensure it covers the entire viewport */
+    top: 0; /* Start at the top of the viewport */
+    left: 0; /* Start at the left of the viewport */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgb(226, 226, 226); /* Background color */
+    z-index: 0; /* Adjust z-index if needed */
+    opacity: 1;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.home-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/man.png'); /* Add the background image */
+    background-size: 100% 110%; /* Set size for the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position:center; /* Align image to the right side */
+    filter: blur(6px); /* Apply blur to the background image */
+    opacity: 0.8; /* Adjust opacity for overlay effect */
+    z-index: -1; /* Ensure it sits behind content */
+}
+
+
+
+
+.home-nav {
+   
+    width: 100.5%;
+    height: 100px;
+    display: flex;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: -2%;
+    padding: 10px 0px;
+    color: rgb(13, 0, 79);
+
+   
+    /* justify-content: space-around; */
+
+    justify-content: right;
+    align-items: center;
+    box-shadow: 2px 10px 24px 0px rgba(101, 101, 101, 0.75);
+    -webkit-box-shadow: 2px 10px 24px 0px rgba(101, 101, 101, 0.75);
+    -moz-box-shadow: 2px 10px 24px 0px rgba(101, 101, 101, 0.75);
+    position: sticky;
+    font-family: 'Poppins';
+
+
+}
+
+.home-nav a {
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+}
+
+.home a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 3px solid rgb(152, 2, 2);
+    transition: 0.4s linear;
+}
+
+.home a:hover:before {
+    width: 90%;
+}
+
+.schedule {
+    display: inline-block;
+    margin: 20px;
+}
+
+.schedule a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.schedule a:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.schedule a:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+.schedule a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+
+.no-search {
+    font-size: 20px;
+}
+
+.home-page-title {
+    text-align: left;
+    text-shadow: #222;
+    border: #dbe9f4;
+    color: #222;
+    font-size: 50px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.home-para {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: 20px;
+    padding-top: -50px;
+    text-align: left;
+    text-indent: 60px;
+    
+}
+
+.cta-buttons a {
+    font-family:'Open-sans' ;
+    border-radius: 10px;
+    font-size: 21px;
+    padding: 20px 10px;
+    letter-spacing: 0.7px;
+    text-indent: 0px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.cta-buttons p {
+    /* font-family: 'Open Sans'; */
+    margin-left: 130px;
+    text-align: left;
+    margin-bottom: -20px;
+
+}
+
+.fill-on-hover {
+    background-color: transparent !important;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+}
+
+.white-on-hover,
+.fill-on-hover,
+.invert-on-hover,
+.nothing-on-hover {
+    transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    /* font-family: 'Open Sans Light', arial, sans-serif; */
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0;
+    font-size: 19px;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    position: relative;
+    padding: 18px 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* header css */
+.header {
+    background-color: #dbe9f4;
+    color: rgb(76, 76, 76);
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    min-height: 15px;
+    box-shadow: black;
+}
+
+.logo {
+    position: absolute;
+    /* Positions the logo absolutely within the header */
+    top: 50%;
+    /* Vertically center the logo */
+    left: 20px;
+    /* Align logo to the left */
+    transform: translateY(-50%);
+    /* Adjust for vertical centering */
+    height: 55px;
+    /* Adjust based on logo size */
+    border-radius: 10px;
+}
+
+.header h1 {
+    margin: 15px;
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0px;
+    word-spacing: 50cm;
+}
+
+.header nav ul li {
+    text-align: center;
+    display: inline;
+    margin: 0 10px;
+}
+
+.header nav ul li a {
+    color: rgb(67, 65, 65);
+    text-decoration: none;
+    word-spacing: 10cm;
+
+}
+/* forgot password*/
+h5{
+    padding-top: 10px;
+}
+
+/*schedule page*/
+.schedule-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .schedule-table th, .schedule-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .schedule-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .schedule-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .schedule-table input {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+
